@@ -1,0 +1,61 @@
+
+ {% extends "layout.html" %}
+{% block content %}
+    
+<table class="table table-striped table-dark tbale-width border">
+    <thead>
+      <tr>
+        <th scope="col">Faculty</th>
+        <th class="left-border" scope="col">Science</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Department</th>
+        <td class="left-border">Computer Science</td>
+        
+      </tr>
+      <tr>
+        <th scope="row">Batch</th>
+        <td class="left-border">Batch-3</td>
+      </tr>
+      <tr>
+        <th scope="row">Semester</th>
+        <td class="left-border">1</td>
+      </tr>
+      <tr>
+        <th scope="row">Exam type</th>
+        <td class="left-border">Final</td>
+      </tr>
+      <tr>
+        <th scope="row">Shift</th>
+        <td class="left-border">Full time</td>
+      </tr>
+    </tbody>
+  </table>  
+
+
+<table class="table table-striped table-dark student border">
+    <thead>
+        <tr>
+          <th class="left-border" scope="col">#</th>
+          <th class="left-border" scope="col">Student ID</th>
+          <th class="left-border" scope="col">Student Name</th>
+          <th class="left-border" scope="col">Student Username</th>
+          <th class="left-border" scope="col">Student Password</th>
+        </tr>
+    </thead >
+    <tbody>
+      {% for student in students %}
+        <tr class="hover-row">
+          <th class="left-border" scope="row">{{ student.No }}</th>
+          <td class="left-border">{{ student.ID }}</td>
+          <td class="left-border">{{ student.Name }}</td>
+          <td class="left-border">{{ student.Username }}</td>
+          <td class="left-border">{{ student.Password }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

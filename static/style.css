@@ -1,0 +1,70 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+.mt{
+    margin-top: 100px;
+
+}
+.happy{
+    font-size: 24px;
+}
+.margin{
+    margin-top: 20rem;
+}
+.ml-20{
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+.Label{
+    margin-top: 5px;
+    margin-bottom: 0.8rem;
+}
+.padding{
+    padding: 5px 25px 5px 25px;
+    margin-left: 28rem;
+}
+.FORMREGISTER{
+    margin-top: 5px;
+    margin-left: 20rem;
+}
+.right{
+    margin-left: 28rem;
+}
+.messege{
+    margin-left: 20rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    width: 500px;
+
+}
+.account{
+    margin-left: 55rem;
+}
+
+.tbale-width{
+    width: 40rem;
+    margin-top: 2.5rem;
+}
+.student{
+    width: 75em;
+    margin-top: 40px;
+}
+tr#hovers{
+    background-color: white;
+}
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5; /* Change this to your desired hover color */
+  }
+.hover-row:hover {
+    background-color: #f5f5f5; /* Change this to your desired hover color */
+}
+.border{
+    border-left: 2px solid red !important;
+    border-right: 2px solid red !important;
+}
+.left-border{
+    border-left: 1px solid white !important;
+
+}
+  

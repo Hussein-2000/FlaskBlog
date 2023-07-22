@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form action="/login" method="post" class="FORMREGISTER">
+    {{ form.hidden_tag() }}
+    <fieldset>
+        <legend>Sing in</legend>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.email.label(class="Label") }}
+                {% if form.email.errors %}
+                {{ form.email(class="form-control is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                    <span> {{ error }}</span>
+                    {% endfor%}
+                </div>
+
+                {% else%}
+                {{ form.email(class="form-control") }}
+                {% endif%}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.password.label(class="Label") }}
+                {% if form.password.errors %}
+                {{ form.password(class="form-control is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                    <span> {{ error }}</span>
+                    {% endfor%}
+                </div>
+
+                {% else%}
+                {{ form.password(class="form-control") }}
+                {% endif%}
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary ml-20 padding">Sign in</button>
+    </fieldset>
+</form>
+
+
+<div class="pt-3">
+    <small class="text-muted right">
+        <a href="{{ url_for('ForgetPassword') }}">Forget password? </a>
+    </small>
+</div>
+
+
+<div class="pt-3">
+    <small class="text-muted right">
+        I wnat an account?   .  <a href="{{ url_for('register') }}">Sign Up</a>
+    </small>
+</div>
+
+
+{% endblock %}
